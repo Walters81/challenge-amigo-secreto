@@ -34,8 +34,8 @@ function sortearAmigo() {
 }
 
 // Agregar event listener al botón de sorteo
-let sortearButton = document.querySelector('#button-draw');
-sortearButton.addEventListener("click", sortearAmigo);
+let botonSortear = document.querySelector('#button-draw');
+botonSortear.addEventListener("click", sortearAmigo);
 
 function limpiarCaja() {
     document.querySelector('#amigo').value = '';
