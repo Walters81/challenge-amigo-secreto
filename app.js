@@ -4,15 +4,14 @@ let listaDeAmigos = [];
 let listaDeNombres = document.getElementById("listaAmigos");
 let elementoAmigoSorteado = document.getElementById("resultado");
 
-
-//agregar los nombres de los amigos
+// Agregar los nombres de los amigos
 function agregarAmigo() {
     let nombreDeAmigos = document.getElementById('amigo').value;
 
-    if(nombreDeAmigos===""){
+    if(nombreDeAmigos === ""){
         alert("Ingrese un nombre válido");
-    }else{
-        listaDeAmigos.push[nombreDeAmigos];
+    } else {
+        listaDeAmigos.push(nombreDeAmigos);
         let nuevoElemento = document.createElement('li');
         nuevoElemento.textContent = nombreDeAmigos;
         listaDeNombres.appendChild(nuevoElemento);
@@ -21,19 +20,22 @@ function agregarAmigo() {
         limpiarCaja();
     }
 }
-    
-//Sortear el amigo secreto
+
+// Sortear el amigo secreto
 function sortearAmigo() {
     if(listaDeAmigos.length > 0) {
         let amigoSorteado = listaDeAmigos[Math.floor(Math.random() * listaDeAmigos.length)];
         elementoAmigoSorteado.textContent = `El amigo secreto es: ${amigoSorteado}`;
         return amigoSorteado;
-    }else{
+    } else {
         alert("Debes ingresar al menos un nombre para poder sortear");
         return null;
     }
 }
-sortearAmigo();
+
+// Agregar event listener al botón de sorteo
+let sortearButton = document.querySelector('#button-draw');
+sortearButton.addEventListener("click", sortearAmigo);
 
 function limpiarCaja() {
     document.querySelector('#amigo').value = '';
