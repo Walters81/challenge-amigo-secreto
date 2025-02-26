@@ -12,11 +12,14 @@ function agregarAmigo() {
         alert("Por favor, inserte un nombre.");
     } else {
         listaDeAmigos.push(nombreDeAmigos);
+    }
+        listaDeNombres.innerHTML = "";
+        for(let i = 0; i <= listaDeAmigos.length; i++){
         let nuevoElemento = document.createElement('li');
-        nuevoElemento.textContent = nombreDeAmigos;
+        nuevoElemento.textContent = listaDeAmigos[i];
         listaDeNombres.appendChild(nuevoElemento);
-        console.log(nombreDeAmigos);
 
+        console.log(nombreDeAmigos);
         limpiarCaja();
     }
 }
