@@ -1,7 +1,5 @@
 <h1 align="center"> Sorteo del Amigo Secreto </h1>
 
-   ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
-
 ![Amigo Secreto](https://github.com/user-attachments/assets/ad4d742b-42a5-47b3-89a5-09130ee23290)
 
 ## Descripción del Proyecto:
