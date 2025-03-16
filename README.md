@@ -35,3 +35,6 @@ El usuario deberá agregar nombres mediante un campo de texto y un botón "Añad
 ## Autor:
 
 https://github.com/Walters81
+
+## Agradecimiento:
+A todo el equipo de Alura Latam
